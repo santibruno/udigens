@@ -1,0 +1,59 @@
+/* theme.css — Paleta basada en el logo UDI GENS
+   - Azul institucional (primario)
+   - Borgoña cinta "Desde 1997" (secundario)
+   - Pizarra/escudo (neutro)
+   - Fondos claros con contraste alto
+*/
+
+:root{
+  /* ====== Base de marca ====== */
+  --brand-blue-700: #1d3154;   /* azul profundo (bordes/sombra) */
+  --brand-blue-600: #223a60;   /* azul principal (hover/gradiente) */
+  --brand-blue:     #2a4a75;   /* azul institucional (primario) */
+  --brand-blue-300: #3d5f8c;   /* azul claro (detalles) */
+
+  --brand-burgundy-700: #6b1f26; /* borgoña oscuro (hover) */
+  --brand-burgundy:     #8d2d33; /* borgoña cinta "Desde 1997" (secundario) */
+  --brand-burgundy-300: #a54449; /* aclarado para estados suaves */
+
+  --brand-slate-900: #1a212b; /* casi negro (texto en dark) */
+  --brand-slate-700: #2c3643; /* pizarra escudo (barras/contornos) */
+  --brand-slate-500: #4a5566; /* texto atenuado */
+  --brand-slate-200: #d7dde4; /* bordes claros */
+  --brand-slate-100: #e9edf2; /* superficies claras */
+
+  --brand-cream: #f6f7f9;     /* fondo principal claro */
+  --white: #ffffff;
+
+  /* ====== Tokens semánticos ====== */
+  --primary:        var(--brand-blue);       /* botones/links primarios */
+  --primary-600:    var(--brand-blue-600);
+  --primary-700:    var(--brand-blue-700);
+
+  --secondary:      var(--brand-burgundy);   /* acento: cinta/llamadas */
+  --secondary-700:  var(--brand-burgundy-700);
+
+  --neutral-900:    var(--brand-slate-900);  /* texto fuerte */
+  --neutral-700:    var(--brand-slate-700);  /* barras/headers oscuros */
+  --neutral-500:    var(--brand-slate-500);  /* texto atenuado */
+  --neutral-200:    var(--brand-slate-200);  /* líneas/bordes */
+  --surface:        var(--white);            /* cards/superficies */
+  --bg:             var(--brand-cream);      /* fondo de página */
+  --text:           #0f1521;                 /* texto principal en claro */
+  --muted:          #495265;                 /* texto secundario en claro */
+
+  /* ====== UI tokens ====== */
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.15);
+  --maxw: 1200px;
+  --focus: 0 0 0 4px color-mix(in srgb, var(--primary) 22%, transparent);
+  --font-sans: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  /* Gradientes recomendados */
+  --grad-primary: linear-gradient(180deg, var(--primary), var(--primary-600));
+  --grad-secondary: linear-gradient(180deg, var(--secondary), var(--secondary-700));
+}
+
+/* ====== Modo oscuro opcional (si lo activás) ======
+   Mantiene identidad pero sube contraste en fondos. */
+

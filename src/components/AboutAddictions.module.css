@@ -1,0 +1,6 @@
+.wrap{ display:grid; gap: 20px; padding: clamp(20px, 3vw, 28px); grid-template-columns: 1fr; align-items:center; }
+@media (min-width: 980px){ .wrap{ grid-template-columns: 1.2fr .8fr; } }
+.muted{ color: var(--muted); }
+.list{ display:grid; gap: 6px; padding: 0 0 14px 18px; }
+.illu{ min-height: 260px; border-radius: 14px; border:1px solid var(--stroke);
+  background: linear-gradient(180deg, rgba(0,163,163,.15), transparent), url('/images/services.jpg') center/cover no-repeat; }

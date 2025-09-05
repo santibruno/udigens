@@ -1,0 +1,10 @@
+.wrap{ display:grid; gap: 20px; padding: clamp(20px, 3vw, 28px); grid-template-columns: 1fr; align-items:center; }
+@media (min-width: 980px){ .wrap{ grid-template-columns: 1fr 1.2fr; } }
+.media{ min-height: 260px; border-radius: 14px; border:1px solid var(--stroke);
+  background: radial-gradient(600px 300px at 10% -10%, rgba(0,163,163,.25), transparent 60%), url('/images/nesaworld.jpg') center/cover no-repeat; }
+.texts h2{ margin: 8px 0 6px; }
+.muted{ color: var(--muted); }
+.grid{ display:grid; gap: 12px; margin: 12px 0; grid-template-columns: 1fr 1fr; }
+.point{ padding: 12px; border:1px solid var(--stroke); border-radius: 12px; background: color-mix(in srgb, var(--surface) 60%, transparent); }
+.point span{ color: var(--muted); display:block; margin-top: 4px; }
+.actions{ margin-top: 10px; }

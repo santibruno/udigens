@@ -1,0 +1,9 @@
+.wrap{ display:grid; gap: 20px; padding: clamp(20px, 3vw, 28px); grid-template-columns: 1fr; align-items:center; }
+@media (min-width: 980px){ .wrap{ grid-template-columns: .9fr 1.1fr; } }
+.pic{ border:1px solid var(--stroke); border-radius: 14px; overflow:hidden; background: color-mix(in srgb, var(--surface) 50%, transparent); }
+.pic img{ width:100%; height:auto; object-fit:cover; }
+.muted{ color: var(--muted); }
+.boxes{ display:grid; gap: 12px; margin-top: 12px; }
+.box{ padding: 12px; border:1px solid var(--stroke); border-radius: 12px; background: color-mix(in srgb, var(--surface) 60%, transparent); }
+.box span{ display:block; margin-top:4px; }
+.box small{ color: var(--muted); display:block; margin-top:6px; }

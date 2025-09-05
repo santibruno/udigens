@@ -1,0 +1,9 @@
+.head{ text-align:center; max-width: 840px; margin: 0 auto 18px; }
+.muted{ color: var(--muted); }
+.gallery{ display:grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+.item{ border-radius: 14px; overflow:hidden; border:1px solid var(--stroke); }
+.item img{ width:100%; height: 100%; object-fit: cover; aspect-ratio: 4/3; }
+@media (min-width: 900px){
+  .gallery{ grid-template-columns: 2fr 1fr 1fr; }
+  .item:first-child{ grid-column: 1 / 2; grid-row: 1 / 3; aspect-ratio: 4/5; }
+}
