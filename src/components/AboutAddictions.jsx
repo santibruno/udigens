@@ -6,7 +6,10 @@ export default function AboutAddictions(){
     <div className="section">
       <div className="container">
         <div className={`card ${styles.wrap}`}>
-          <div>
+          <div className={styles.imageContainer}>
+            <img src="/images/adicciones.jpg" alt="Sobre las adicciones" className={styles.image} />
+          </div>
+          <div className={styles.content}>
             <p className="eyebrow">Sobre las adicciones</p>
             <h2>Abordaje integral bio-psico-social</h2>
             <p className={styles.muted}>
@@ -21,10 +24,11 @@ export default function AboutAddictions(){
               <li><strong>Alimentarias:</strong> anorexia, bulimia, atracón.</li>
               <li><strong>Impulsivos-compulsivos:</strong> tricotilomanía, cleptomanía y otros.</li>
             </ul>
-            <a className="btn" href="#contacto">Contactanos</a>
-            <a className="btn" href="#contacto">Saber Más</a>
+            <div className={styles.buttons}>
+              <a className="btn" href="#contacto">Contactanos</a>
+              <a className="btn" href="#abordaje-integral">Saber Más</a>
+            </div>
           </div>
-          <div className={styles.illu} aria-hidden="true"/>
         </div>
       </div>
     </div>

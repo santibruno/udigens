@@ -1,10 +1,50 @@
-.wrap{ display:grid; gap: 20px; padding: clamp(20px, 3vw, 28px); grid-template-columns: 1fr; align-items:center; }
-@media (min-width: 980px){ .wrap{ grid-template-columns: 1fr 1.2fr; } }
-.media{ min-height: 260px; border-radius: 14px; border:1px solid var(--stroke);
-  background: radial-gradient(600px 300px at 10% -10%, rgba(0,163,163,.25), transparent 60%), url('/images/nesaworld.jpg') center/cover no-repeat; }
+.wrap{ padding: clamp(20px, 3vw, 28px); }
+
+.content {
+  display: grid;
+  gap: clamp(20px, 4vw, 40px);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.videoSection {
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .videoSection {
+    order: 0;
+  }
+}
+
+.video {
+  width: 100%;
+  height: 400px;
+  border-radius: 14px;
+  border: 1px solid var(--stroke);
+  object-fit: cover;
+}
+
+.texts {
+  order: 0;
+}
+
+@media (min-width: 768px) {
+  .texts {
+    order: 1;
+  }
+}
+
 .texts h2{ margin: 8px 0 6px; }
 .muted{ color: var(--muted); }
 .grid{ display:grid; gap: 12px; margin: 12px 0; grid-template-columns: 1fr 1fr; }
+.grid .point:nth-child(2),
+.grid .point:nth-child(4) { justify-self: end; }
 .point{ padding: 12px; border:1px solid var(--stroke); border-radius: 12px; background: color-mix(in srgb, var(--surface) 60%, transparent); }
 .point span{ color: var(--muted); display:block; margin-top: 4px; }
-.actions{ margin-top: 10px; }
+.actions{ margin-top: 10px; display: flex; justify-content: center; }

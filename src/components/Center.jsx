@@ -16,9 +16,18 @@ export default function Center(){
         </div>
 
         <div className={styles.gallery}>
-          <figure className={styles.item}><img src="/images/center-1.jpg" alt="Sala de shock room" /></figure>
-          <figure className={styles.item}><img src="/images/center-2.jpg" alt="Espacios recreativos" /></figure>
-          <figure className={styles.item}><img src="/images/services.jpg" alt="Hotelería y gastronomía" /></figure>
+          <figure className={styles.item}>
+            <img src="/images/comedor.jpg" alt="Sala de estar" />
+            <figcaption>Sala de estar</figcaption>
+          </figure>
+          <figure className={styles.item}>
+            <img src="/images/recreativo.jpg" alt="Espacios recreativos" />
+            <figcaption>Espacios recreativos</figcaption>
+          </figure>
+          <figure className={styles.item}>
+            <img src="/images/habitaciones.jpg" alt="Habitaciones" />
+            <figcaption>Habitaciones</figcaption>
+          </figure>
         </div>
       </div>
     </div>

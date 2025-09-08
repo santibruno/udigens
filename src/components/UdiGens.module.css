@@ -1,0 +1,46 @@
+.wrap {
+  padding: clamp(20px, 3vw, 28px);
+}
+
+.content {
+  display: grid;
+  gap: clamp(12px, 2vw, 16px);
+}
+
+.genesis {
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}
+
+.description {
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.objective {
+  color: var(--primary);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.actions .btn {
+  box-shadow: none;
+  background: var(--primary);
+  transition: none;
+}
+
+.actions .btn:hover {
+  transform: none;
+  box-shadow: none;
+}
+

@@ -1,7 +1,163 @@
-.footer{ border-top:1px solid var(--stroke); background: color-mix(in srgb, var(--surface) 50%, transparent); padding: 28px 0; }
-.grid{ display:grid; gap: 14px; }
-.brand{ display:flex; align-items:center; gap: 10px; }
-.mark{ width:34px; height:34px; border-radius: 10px; background: linear-gradient(180deg, var(--primary), var(--primary-600));
-  color:#fff; display:grid; place-items:center; font-weight:800; }
-.nav{ display:flex; flex-wrap:wrap; gap: 12px; }
-.legal{ color: var(--muted); }
+.footer{ 
+  background: var(--primary); 
+  padding: 32px 0; 
+  color: white;
+}
+
+.content{ 
+  display: grid; 
+  gap: 60px; 
+  text-align: left;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  max-width: 1200px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
+  
+  .rightColumn {
+    display: none;
+  }
+}
+
+.brand {
+  margin-bottom: 8px;
+}
+
+.brandTitle {
+  margin: 0;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease;
+}
+
+.navLink:hover {
+  opacity: 0.8;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.centerColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-self: center;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-self: end;
+}
+
+.mapContainer {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 200px;
+  width: 100%;
+}
+
+.mapIframe {
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.mapAddress {
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.mapAddress small {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+.contactSection {
+  margin-top: 0;
+}
+
+.contactTitle {
+  margin: 0 0 16px 0;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 700;
+}
+
+.contactInfo {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 20px 1fr;
+  column-gap: 8px;
+  justify-content: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Acercar específicamente el número de WhatsApp al ícono */
+.contactInfo .contactItem:first-child a {
+  margin-left: -4px;
+}
+
+.contactItem {
+  display: contents;
+}
+
+.icon {
+  font-size: 1.1rem;
+  justify-self: center;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsappIcon {
+  width: 16px;
+  height: 16px;
+  color: #25D366;
+  justify-self: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: opacity 0.2s ease;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.legal{ 
+  color: rgba(255, 255, 255, 0.7); 
+  margin-top: 24px;
+  font-size: 0.8rem;
+  text-align: center;
+}

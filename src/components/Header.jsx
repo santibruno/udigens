@@ -32,7 +32,7 @@ export default function Header(){
     <header className={`site-header ${styles.header}`}>
       <div className="container">
         <div className={styles.row}>
-          <a href="#top" className={styles.logo} aria-label="UDI GENS Inicio">
+          <a href="/" className={styles.logo} aria-label="UDI GENS Inicio">
             <img src="/images/logo.png" alt="Logo UDI GENS" />
           </a>
 
@@ -55,6 +55,7 @@ export default function Header(){
             <a href="#centro" onClick={()=>setOpen(false)}>Centro</a>
             <a href="#herramientas" onClick={()=>setOpen(false)}>Herramientas</a>
             <a href="#servicios" onClick={()=>setOpen(false)}>Servicios</a>
+            <a href="/equipo" onClick={()=>setOpen(false)}>Equipo</a>
             <a href="#nosotros" onClick={()=>setOpen(false)}>Nosotros</a>
             <a href="#contacto" className="btn" onClick={()=>setOpen(false)}>Contactanos</a>
           </nav>
