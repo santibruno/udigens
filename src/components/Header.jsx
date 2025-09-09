@@ -37,7 +37,7 @@ export default function Header(){
           </a>
 
           <button
-            className={styles.burger}
+            className={`${styles.burger} ${open ? styles.open : ''}`}
             aria-label="Abrir menú"
             aria-expanded={open}
             aria-controls="site-nav"
@@ -51,13 +51,12 @@ export default function Header(){
             className={`${styles.nav} ${open ? styles.navOpen : ''}`}
             aria-hidden={!open}
           >
-            <a href="#adicciones" onClick={()=>setOpen(false)}>Adicciones</a>
-            <a href="#centro" onClick={()=>setOpen(false)}>Centro</a>
-            <a href="#herramientas" onClick={()=>setOpen(false)}>Herramientas</a>
-            <a href="#servicios" onClick={()=>setOpen(false)}>Servicios</a>
+            <a href="/adicciones" onClick={()=>setOpen(false)}>Adicciones</a>
+            <a href="/instalaciones" onClick={()=>setOpen(false)}>Instalaciones</a>
+            <a href="/abordajes" onClick={()=>setOpen(false)}>Herramientas</a>
+            <a href="/nesaworld" onClick={()=>setOpen(false)}>NesaWorld</a>
             <a href="/equipo" onClick={()=>setOpen(false)}>Equipo</a>
-            <a href="#nosotros" onClick={()=>setOpen(false)}>Nosotros</a>
-            <a href="#contacto" className="btn" onClick={()=>setOpen(false)}>Contactanos</a>
+            <a href="/#contacto" onClick={()=>setOpen(false)}>Contacto</a>
           </nav>
         </div>
       </div>

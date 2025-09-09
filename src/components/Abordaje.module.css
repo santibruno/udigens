@@ -4,7 +4,42 @@
 
 .content {
   display: grid;
-  gap: clamp(16px, 2vw, 20px);
+  gap: clamp(20px, 4vw, 40px);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.imageSection {
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .imageSection {
+    order: 0;
+  }
+}
+
+.herramientasImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--stroke);
+}
+
+.textSection {
+  order: 0;
+}
+
+@media (min-width: 768px) {
+  .textSection {
+    order: 1;
+  }
 }
 
 .intro {

@@ -7,10 +7,9 @@ export default function AboutUs(){
       <div className="container">
         <div className={`card ${styles.wrap}`}>
           <div className={styles.pic} aria-hidden="true">
-            <img src="/images/director.jpg" alt="Director Médico UDI GENS" />
+            <img src="/images/doc.jpg" alt="Director Médico UDI GENS" />
           </div>
           <div>
-            <p className="eyebrow">Nosotros</p>
             <h2>Trayectoria, equipo y dirección médica</h2>
             <p className={styles.muted}>
               Desde hace más de 27 años ofrecemos un espacio de recuperación integral

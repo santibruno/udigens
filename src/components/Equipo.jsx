@@ -102,7 +102,6 @@ export default function Equipo(){
           <div className={styles.content}>
             <div className={styles.header}>
               <div className={styles.headerContent}>
-                <p className="eyebrow">Nuestro equipo</p>
                 <h2>Profesionales multidisciplinarios</h2>
                 <p className={styles.intro}>
                   Contamos con un equipo de profesionales altamente capacitados y especializados 

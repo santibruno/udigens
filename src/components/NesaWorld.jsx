@@ -11,9 +11,10 @@ export default function NesaWorld(){
               <video 
                 src="/images/video1.mp4" 
                 controls 
-                preload="metadata"
+                preload="auto"
                 className={styles.video}
                 poster="/images/nesaworld.jpg"
+                onLoadedData={(e) => { e.target.currentTime = 1; }}
               >
                 Tu navegador no soporta el elemento de video.
               </video>
@@ -47,7 +48,7 @@ export default function NesaWorld(){
               </div>
 
               <div className={styles.actions}>
-                <a className="btn secondary" href="#nesaworld-detalle">Quiero saber más</a>
+                <a className="btn secondary" href="/nesaworld">Quiero saber más</a>
               </div>
             </div>
           </div>

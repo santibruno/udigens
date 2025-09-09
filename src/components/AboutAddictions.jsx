@@ -10,7 +10,6 @@ export default function AboutAddictions(){
             <img src="/images/adicciones.jpg" alt="Sobre las adicciones" className={styles.image} />
           </div>
           <div className={styles.content}>
-            <p className="eyebrow">Sobre las adicciones</p>
             <h2>Abordaje integral bio-psico-social</h2>
             <p className={styles.muted}>
               Las adicciones impactan la salud física, mental y social de la
@@ -26,7 +25,7 @@ export default function AboutAddictions(){
             </ul>
             <div className={styles.buttons}>
               <a className="btn" href="#contacto">Contactanos</a>
-              <a className="btn" href="#abordaje-integral">Saber Más</a>
+              <a className="btn" href="/adicciones">Saber Más</a>
             </div>
           </div>
         </div>
