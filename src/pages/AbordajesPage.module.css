@@ -118,6 +118,23 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.approach:nth-child(2),
+.approach:nth-child(4) {
+  background: var(--primary);
+  color: white;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: clamp(40px, 5vw, 60px) clamp(20px, 3vw, 28px);
+  border: none;
+  border-radius: 0;
+}
+
+.approach:nth-child(2) .approachContent,
+.approach:nth-child(4) .approachContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .approach:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -144,10 +161,21 @@
   flex-shrink: 0;
 }
 
+.approach:nth-child(2) .approachNumber,
+.approach:nth-child(4) .approachNumber {
+  background: white;
+  color: var(--primary);
+}
+
 .approach h3 {
   color: var(--primary);
   margin: 0;
   font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+}
+
+.approach:nth-child(2) h3,
+.approach:nth-child(4) h3 {
+  color: white;
 }
 
 .approach p {
@@ -155,6 +183,11 @@
   color: var(--text);
   margin: 0 0 20px 0;
   font-size: 1rem;
+}
+
+.approach:nth-child(2) p,
+.approach:nth-child(4) p {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .approachDetails {
@@ -173,6 +206,11 @@
   font-size: 0.95rem;
 }
 
+.approach:nth-child(2) .approachDetails li,
+.approach:nth-child(4) .approachDetails li {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .approachDetails li::before {
   content: '•';
   color: var(--primary);
@@ -180,6 +218,11 @@
   position: absolute;
   left: 0;
   font-size: 1.2rem;
+}
+
+.approach:nth-child(2) .approachDetails li::before,
+.approach:nth-child(4) .approachDetails li::before {
+  color: white;
 }
 
 .integration {

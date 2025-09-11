@@ -1,11 +1,17 @@
 .wrap {
-  padding: clamp(20px, 3vw, 28px);
+  background: var(--primary);
+  color: white;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: clamp(40px, 5vw, 60px) clamp(20px, 3vw, 28px);
 }
 
 .content {
   display: grid;
   gap: clamp(20px, 4vw, 40px);
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -29,7 +35,8 @@
   height: 300px;
   object-fit: cover;
   border-radius: 16px;
-  border: 1px solid var(--stroke);
+  border: 2px solid white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .textSection {
@@ -43,7 +50,7 @@
 }
 
 .description {
-  color: var(--text);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
   margin: 0;
 }
@@ -64,11 +71,22 @@
 
 .actions .btn {
   box-shadow: none;
-  background: var(--primary);
-  transition: none;
+  background: white;
+  color: var(--primary);
+  transition: all 0.2s ease;
+  border: 2px solid white;
+  font-weight: 500;
 }
 
 .actions .btn:hover {
-  transform: none;
-  box-shadow: none;
+  background: white;
+  color: var(--primary);
+  border: 2px solid white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.textSection h2 {
+  color: white;
+  margin: 0 0 16px 0;
 }
