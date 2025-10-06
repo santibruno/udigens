@@ -1,27 +1,44 @@
-.footer{ 
+.footer { 
   background: var(--primary); 
   padding: 32px 0; 
   color: white;
 }
 
-.content{ 
+.content { 
   display: grid; 
-  gap: 60px; 
+  gap: 40px; 
   text-align: left;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
   align-items: start;
+}
+
+@media (max-width: 992px) {
+  .content {
+    grid-template-columns: 1fr 1fr; /* tablet: 2 columnas */
+  }
 }
 
 @media (max-width: 768px) {
   .content {
-    grid-template-columns: 1fr;
-    max-width: 300px;
+    grid-template-columns: 1fr; /* mobile: 1 columna */
+    gap: 32px;
+    text-align: center;
   }
-  
-  .rightColumn {
-    display: none;
+
+  .leftColumn, 
+  .centerColumn {
+    align-items: center;
+  }
+
+  .navigation {
+    align-items: center;
+  }
+
+   .rightColumn {
+    align-items: flex-end; 
   }
 }
 
@@ -62,25 +79,31 @@
 .centerColumn {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-self: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .centerColumn {
+    align-items: center;
+  }
 }
 
 .rightColumn {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  justify-self: end;
+  align-items: center;  
 }
 
 .mapContainer {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
+  margin: 0 auto;   
 }
-
 .mapIframe {
   display: block;
   border-radius: 8px 8px 0 0;
@@ -110,27 +133,20 @@
 }
 
 .contactInfo {
-  display: grid;
-  gap: 8px;
-  grid-template-columns: 20px 1fr;
-  column-gap: 8px;
-  justify-content: center;
-  max-width: 200px;
-  margin: 0 auto;
-}
-
-/* Acercar específicamente el número de WhatsApp al ícono */
-.contactInfo .contactItem:first-child a {
-  margin-left: -4px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 220px;
 }
 
 .contactItem {
-  display: contents;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .icon {
   font-size: 1.1rem;
-  justify-self: center;
   width: 20px;
   display: flex;
   align-items: center;
@@ -138,10 +154,10 @@
 }
 
 .whatsappIcon {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   color: #25D366;
-  justify-self: center;
+  flex-shrink: 0;
 }
 
 .link {
@@ -155,9 +171,9 @@
   opacity: 0.8;
 }
 
-.legal{ 
+.legal { 
   color: rgba(255, 255, 255, 0.7); 
-  margin-top: 24px;
+  margin-top: 32px;
   font-size: 0.8rem;
   text-align: center;
 }

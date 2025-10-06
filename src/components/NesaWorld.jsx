@@ -9,7 +9,7 @@ export default function NesaWorld(){
           <div className={styles.content}>
             <div className={styles.videoSection}>
               <video 
-                src="/images/video1.mp4" 
+                src="/images/video2.mp4" 
                 controls 
                 preload="auto"
                 className={styles.video}

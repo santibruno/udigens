@@ -5,73 +5,142 @@ const teamMembers = [
   {
     name: 'Prof. Dr. Guillermo F. Dorado',
     role: 'Director Médico',
-    description: 'Médico. Universidad de BsAs. Especialista en Psiquiatría, Ministerio De Salud de la Nación. Magister en Neuropsicofarmacologia, Universidad Favaloro. Profesor Titular Adicciones I y II, Maestría en Drogodependencias, Facultad de Medicina, Universidad del Salvador. Prof. Titular Adicciones, Maestría en Neuropsicofarmacologia, Universidad Favaloro. Prof. Invitado, Universidad Cayetano Heredia (Lima, Perú). Prof. Invitado, Universidad San Pablo (La Paz, Bolivia). Ex-Presidente del Colegio Latinoamericano de Neuropsicofarmacologia (CLANP).',
+    description: [
+      'Médico. Universidad de BsAs. Especialista en Psiquiatría, Ministerio De Salud de la Nación.',
+      'Magister en Neuropsicofarmacologia, Universidad Favaloro.',
+      'Profesor Titular Adicciones I y II, Maestría en Drogodependencias, Facultad de Medicina, Universidad del Salvador.',
+      'Prof. Titular Adicciones, Maestría en Neuropsicofarmacologia, Universidad Favaloro.',
+      'Prof. Invitado, Universidad Cayetano Heredia (Lima, Perú).',
+      'Prof. Invitado, Universidad San Pablo (La Paz, Bolivia).',
+      'Ex-Presidente del Colegio Latinoamericano de Neuropsicofarmacologia (CLANP).'
+    ],
     image: '/images/director.jpg'
   },
   {
     name: 'Carina M. Leocadio',
     role: 'Psicóloga y Directora Institucional',
-    description: 'Magíster en PsicoInmunoNeuroEndocrinología (Universidad Favaloro). Magíster en Prevención y Asistencia de la Drogodependencia (Universidad del Salvador). Postgrado en Psicofarmacología, Facultad de Medicina (UNR). Postgrado en Neuropsicología, Diagnóstico y Tratamiento (Hospital Italiano Buenos Aires).',
+    description: [
+      'Magíster en PsicoInmunoNeuroEndocrinología (Universidad Favaloro).',
+      'Magíster en Prevención y Asistencia de la Drogodependencia (Universidad del Salvador).',
+      'Postgrado en Psicofarmacología, Facultad de Medicina (UNR).',
+      'Postgrado en Neuropsicología, Diagnóstico y Tratamiento (Hospital Italiano Buenos Aires).'
+    ],
     image: '/images/directora.jpg'
   },
   {
     name: 'Diego Sriel Fernandez Lloret',
     role: 'Lic. en Psicología. Coordinador General',
-    description: 'Expositor V Congreso FLAPPSIP. Expositor V CONGRESO AUDEPP. Especialidad en psicoanálisis con niños (UCES). X Congreso Latinoamericano de sexología y Educación Sexual (X Clases) 2000. II Curso de Neuropsicología 2001. Seminario sobre Suicidio (CPPL).',
+    description: [
+      'Expositor V Congreso FLAPPSIP.',
+      'Expositor V CONGRESO AUDEPP.',
+      'Especialidad en psicoanálisis con niños (UCES).',
+      'X Congreso Latinoamericano de sexología y Educación Sexual (2000).',
+      'II Curso de Neuropsicología (2001).',
+      'Seminario sobre Suicidio (CPPL).'
+    ],
     image: '/images/coordinador.jpg'
   },
   {
     name: 'Carolina Casillo',
     role: 'Lic. en psicología (Universidad de Buenos Aires) STAFF',
-    description: 'Formación en clínica de adultos y adolescentes (UBA). Formación en terapia de familia (institución Fernando Ulloa). Formación en consumo problemático (colegio de Psicólogos de la provincia de Buenos aires).',
+    description: [
+      'Formación en clínica de adultos y adolescentes (UBA).',
+      'Formación en terapia de familia (Institución Fernando Ulloa).',
+      'Formación en consumo problemático (Colegio de Psicólogos de la Provincia de Buenos Aires).'
+    ],
     image: '/images/staff1.jpg'
   },
   {
     name: 'Nicole Cordido',
     role: 'Licenciada en Psicología (Universidad de Morón) STAFF',
-    description: 'Maestría en Prevención y asistencia de las drogadependencias | Universidad del Salvador - 2023- en curso. Diplomatura en "Tratamiento de las Adicciones" | Escuela Sistémica Argentina - 2020. Formación en Salud Sexual y Reproductiva dentro del Plan ENIA | Ministerio de Salud de la Nación | 2018-2023. Formación en Psicodrama | Centro Argentino en Psicodrama Psicoanalítico | 2018. Acompañamiento Terapéutico | Universidad de Morón | 2016. Seminario "La conflictividad familiar en el mito. Una lectura política de las relaciones de género" | Universidad de Morón | 2013.',
+    description: [
+      'Maestría en Prevención y asistencia de las drogadependencias | Universidad del Salvador - en curso.',
+      'Diplomatura en "Tratamiento de las Adicciones" | Escuela Sistémica Argentina - 2020.',
+      'Formación en Salud Sexual y Reproductiva dentro del Plan ENIA | Ministerio de Salud de la Nación (2018-2023).',
+      'Formación en Psicodrama | Centro Argentino en Psicodrama Psicoanalítico (2018).',
+      'Acompañamiento Terapéutico | Universidad de Morón (2016).',
+      'Seminario "La conflictividad familiar en el mito" | Universidad de Morón (2013).'
+    ],
     image: '/images/staff2.jpg'
   },
   {
     name: 'Maria Eva Palopoli',
     role: 'Lic. En Psicología (Universidad de Buenos Aires) STAFF',
-    description: 'Especialización en terapia de pareja y familia, clínica de niños, adolescentes y adultos en la institución Fernando Ulloa. Licenciatura en psicología en la Universidad de Buenos Aires. Curso de extensión "análisis e intervención sobre patologías narcisistas" en la institución Fernando Ulloa. Actualmente realizando curso sobre estrategias de intervención en patologías de consumo problemático de sustancias.',
+    description: [
+      'Especialización en terapia de pareja y familia, clínica de niños, adolescentes y adultos (Institución Fernando Ulloa).',
+      'Licenciatura en Psicología en la Universidad de Buenos Aires.',
+      'Curso de extensión "Análisis e intervención sobre patologías narcisistas" (Institución Fernando Ulloa).',
+      'Curso sobre estrategias de intervención en consumo problemático de sustancias (en curso).'
+    ],
     image: '/images/Staff3.jpg'
   },
   {
     name: 'Lic. Martín Moguel',
     role: 'Psicólogo especialista en sistémica STAFF',
-    description: 'Maestría PINE en Universidad Favaloro. Psicólogo deportivo en Barça Innovation Hub. Investigador del Síndrome de Staff Burnout. Terapeuta vincular - Taller de vínculos. Psicólogo clínico en Grupo Médico del niño y la familia Francisco Maglio. Psicólogo clínico familiar y coordinador de grupo terapéutico en Fundación 90 Días. Psicólogo deportivo en Racing Club de Avellaneda. Psicólogo comunitario en Fundación Salud Mental y Deporte.',
+    description: [
+      'Maestría PINE en Universidad Favaloro.',
+      'Psicólogo deportivo en Barça Innovation Hub.',
+      'Investigador del Síndrome de Staff Burnout.',
+      'Terapeuta vincular - Taller de vínculos.',
+      'Psicólogo clínico en Grupo Médico del niño y la familia Francisco Maglio.',
+      'Coordinador de grupo terapéutico en Fundación 90 Días.',
+      'Psicólogo deportivo en Racing Club de Avellaneda.',
+      'Psicólogo comunitario en Fundación Salud Mental y Deporte.'
+    ],
     image: '/images/Staff4.jpg'
   },
   {
     name: 'Jesús Vizcarra',
     role: 'Licenciado en Psicología (UBA) Orientación Psicoanalítica. STAFF',
-    description: 'Créditos: Abordaje de trastornos de adicciones y patologías de la Clínica contemporánea. Trabajo con niños, adolescentes y adultos. Crítico de Arte.',
+    description: [
+      'Abordaje de trastornos de adicciones y patologías de la Clínica contemporánea.',
+      'Trabajo con niños, adolescentes y adultos.',
+      'Crítico de Arte.'
+    ],
     image: '/images/Staff5.jpg'
   },
   {
     name: 'María Constanza Guarnaccia',
     role: 'Lic. en Psicología. MN 82542. STAFF',
-    description: 'Diplomatura en Psicodiagnóstico de Rorschach (UCES). Licenciada en Psicología Clínica (UCES). Prácticas profesionales Supervisadas en el Instituto Fernando Ulloa y en Hospital Interdisciplinario Psicoasistencial José Tiburcio Borda. Prácticas Profesionales Supervisadas de clínica de niños en el Centro Terapéutico Proyecto Puente Symbolon.',
+    description: [
+      'Diplomatura en Psicodiagnóstico de Rorschach (UCES).',
+      'Licenciada en Psicología Clínica (UCES).',
+      'Prácticas profesionales en el Instituto Fernando Ulloa y en Hospital José Tiburcio Borda.',
+      'Prácticas en clínica de niños en el Centro Terapéutico Proyecto Puente Symbolon.'
+    ],
     image: '/images/Staff6.jpg'
   },
   {
     name: 'Carlos Alberto Papay',
     role: 'Estudiante psicología U.B.A STAFF',
-    description: 'Coordinación y acompañamiento en centro comunitario de Adicciones en C.A.B.A - 10 años.',
+    description: [
+      'Coordinación y acompañamiento en centro comunitario de Adicciones en C.A.B.A - 10 años.'
+    ],
     image: '/images/Staff7.jpg'
   },
   {
     name: 'Anabella Cardarilli',
     role: 'Licenciada en Psicología (Universidad del Salvador) STAFF',
-    description: 'Postgrado en psicoterapias cognitivas conductuales contemporáneas, en fundación Foro. Especialización en psicooncología en ISEP. Curso de Equinoterapia en Fundación al Reparo. Curso de acompañamiento terapéutico en patologías neuropsiquiátricas en INECO. Seminario en pericias psicológicas en niños y adolescentes.',
+    description: [
+      'Postgrado en psicoterapias cognitivas conductuales contemporáneas (Fundación Foro).',
+      'Especialización en psicooncología en ISEP.',
+      'Curso de Equinoterapia en Fundación al Reparo.',
+      'Curso de acompañamiento terapéutico en patologías neuropsiquiátricas en INECO.',
+      'Seminario en pericias psicológicas en niños y adolescentes.'
+    ],
     image: '/images/Staff8.jpg'
   },
   {
     name: 'Marina Muñoz',
     role: 'Licenciada en psicología (Universidad de Buenos Aires) Profesorado de Ashtanga Yoga.',
-    description: 'Posgrado en psicoanálisis "Dr. Arturo Ameghino". Residencia en psicología clínica "Hospital Araoz Alfaro". Clínica en consultorio. Tallerista de yoga en: Clínica Las Heras, Frenopático, Interea Hospital de Día. Coordinadora Hospital de Día Interea. Psicoterapeuta individual y grupal en Hospital de Día y Half Way House, San Francisco, California, USA.',
+    description: [
+      'Posgrado en psicoanálisis "Dr. Arturo Ameghino".',
+      'Residencia en psicología clínica "Hospital Araoz Alfaro".',
+      'Clínica en consultorio.',
+      'Tallerista de yoga en: Clínica Las Heras, Frenopático, Interea Hospital de Día.',
+      'Coordinadora Hospital de Día Interea.',
+      'Psicoterapeuta en Hospital de Día y Half Way House, San Francisco, California, USA.'
+    ],
     image: '/images/Staff9.jpg'
   },
   {
@@ -94,7 +163,8 @@ const teamMembers = [
   }
 ]
 
-export default function Equipo(){
+
+export default function Equipo() {
   return (
     <div className="section">
       <div className={styles.fullWidth}>
@@ -124,7 +194,18 @@ export default function Equipo(){
                   <div className={styles.memberInfo}>
                     <h3 className={styles.memberName}>{member.name}</h3>
                     <p className={styles.memberRole}>{member.role}</p>
-                    <p className={styles.memberDescription}>{member.description}</p>
+                    
+                    <div className={styles.memberDescription}>
+                      {Array.isArray(member.description) ? (
+                        <ul>
+                          {member.description.map((item, i) => (
+                            <li key={i}>{item}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p>{member.description}</p>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}

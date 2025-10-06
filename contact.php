@@ -23,7 +23,7 @@ if ($name === '' || $email === '' || $message === '') {
 }
 
 // CONFIGURAR:
-$to = 'gensas@yahoo.com';
+$to = 'santib1502@gmail.com';
 $subject = 'Nuevo contacto desde la web UDI GENS';
 $body = "Nombre: $name\nEmail: $email\nTeléfono: $phone\n\nMensaje:\n$message\n";
 $headers = "From: no-reply@udigens.com.ar\r\n";

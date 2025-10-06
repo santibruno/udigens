@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import styles from './NesaWorldPage.module.css'
 
-export default function NesaWorldPage(){
+export default function NesaWorldPage() {
   useEffect(() => {
     document.body.classList.add('page-with-image-header')
     return () => {
@@ -15,18 +15,14 @@ export default function NesaWorldPage(){
     <>
       <Header />
       <main>
+        {/* 🔹 Banner con imagen */}
         <div className={styles.heroSection}>
           <div className={styles.videoContainer}>
-            <video 
-              src="/images/video2.mp4" 
-              controls 
-              preload="auto"
-              className={styles.heroVideo}
-              poster="/images/nesaworld.jpg"
-              onLoadedData={(e) => { e.target.currentTime = 1; }}
-            >
-              Tu navegador no soporta el elemento de video.
-            </video>
+            <img 
+              src="/images/nesaworld.png" 
+              alt="NesaWorld" 
+              className={styles.heroVideo} 
+            />
             <div className={styles.heroOverlay}>
               <div className="container">
                 <div className={styles.heroContent}>
@@ -40,6 +36,25 @@ export default function NesaWorldPage(){
           </div>
         </div>
 
+        {/* 🔹 Sección con el video */}
+        <section className={styles.videoSection}>
+          <div className="container">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className={styles.sectionVideo}
+            >
+              <source src="/images/video2.webm" type="video/webm" />
+              <source src="/images/video2.mp4" type="video/mp4" />
+              Tu navegador no soporta el elemento de video.
+            </video>
+          </div>
+        </section>
+
+        {/* 🔹 Contenido principal */}
         <section className="section">
           <div className="container">
             <div className={`card ${styles.contentCard}`}>
