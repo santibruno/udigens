@@ -3,7 +3,7 @@ import styles from './Highlights.module.css'
 
 const items = [
   { title: '+27 años', desc: 'Experiencia y trayectoria', icon: '🏥', link: '#udigens' },
-  { title: 'Equipo', desc: 'Profesionales multidisciplinarios', icon: '🧑‍⚕️', link: '/equipo' },
+  { title: 'Equipo', desc: 'Equipo profesional multidisciplinarios', icon: '🧑‍⚕️', link: '/equipo' },
   { title: 'NesaWorld', desc: 'Innovación no invasiva', icon: '⚡', link: '#herramientas' },
   { title: 'Herramientas', desc: 'Abordaje terapéutico', icon: '🛠️', link: '#abordaje' }
 ]

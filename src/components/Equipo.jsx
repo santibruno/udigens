@@ -63,17 +63,7 @@ const teamMembers = [
     ],
     image: '/images/staff2.jpg'
   },
-  {
-    name: 'Maria Eva Palopoli',
-    role: 'Lic. En Psicología (Universidad de Buenos Aires) STAFF',
-    description: [
-      'Especialización en terapia de pareja y familia, clínica de niños, adolescentes y adultos (Institución Fernando Ulloa).',
-      'Licenciatura en Psicología en la Universidad de Buenos Aires.',
-      'Curso de extensión "Análisis e intervención sobre patologías narcisistas" (Institución Fernando Ulloa).',
-      'Curso sobre estrategias de intervención en consumo problemático de sustancias (en curso).'
-    ],
-    image: '/images/Staff3.jpg'
-  },
+
   {
     name: 'Lic. Martín Moguel',
     role: 'Psicólogo especialista en sistémica STAFF',
@@ -98,37 +88,6 @@ const teamMembers = [
       'Crítico de Arte.'
     ],
     image: '/images/Staff5.jpg'
-  },
-  {
-    name: 'María Constanza Guarnaccia',
-    role: 'Lic. en Psicología. MN 82542. STAFF',
-    description: [
-      'Diplomatura en Psicodiagnóstico de Rorschach (UCES).',
-      'Licenciada en Psicología Clínica (UCES).',
-      'Prácticas profesionales en el Instituto Fernando Ulloa y en Hospital José Tiburcio Borda.',
-      'Prácticas en clínica de niños en el Centro Terapéutico Proyecto Puente Symbolon.'
-    ],
-    image: '/images/Staff6.jpg'
-  },
-  {
-    name: 'Carlos Alberto Papay',
-    role: 'Estudiante psicología U.B.A STAFF',
-    description: [
-      'Coordinación y acompañamiento en centro comunitario de Adicciones en C.A.B.A - 10 años.'
-    ],
-    image: '/images/Staff7.jpg'
-  },
-  {
-    name: 'Anabella Cardarilli',
-    role: 'Licenciada en Psicología (Universidad del Salvador) STAFF',
-    description: [
-      'Postgrado en psicoterapias cognitivas conductuales contemporáneas (Fundación Foro).',
-      'Especialización en psicooncología en ISEP.',
-      'Curso de Equinoterapia en Fundación al Reparo.',
-      'Curso de acompañamiento terapéutico en patologías neuropsiquiátricas en INECO.',
-      'Seminario en pericias psicológicas en niños y adolescentes.'
-    ],
-    image: '/images/Staff8.jpg'
   },
   {
     name: 'Marina Muñoz',
@@ -172,7 +131,7 @@ export default function Equipo() {
           <div className={styles.content}>
             <div className={styles.header}>
               <div className={styles.headerContent}>
-                <h2>Profesionales multidisciplinarios</h2>
+                <h2>Equipo profesional multidisciplinarios</h2>
                 <p className={styles.intro}>
                   Contamos con un equipo de profesionales altamente capacitados y especializados 
                   en el tratamiento integral de adicciones, comprometidos con la recuperación 
