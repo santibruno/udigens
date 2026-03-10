@@ -119,6 +119,66 @@ const teamMembers = [
     role: 'Asistente de compras',
     description: '',
     image: '/images/Staff12.jpg'
+  },
+  {
+    name: 'Lucas Bindi',
+    role: 'Licenciado en psicología',
+    description: [
+      'Terapias individuales',
+      'Terapias vinculares',
+      'Terapias grupales'
+    ],
+    image: '/images/Staff13.jpeg'
+  },
+  {
+    name: 'Natalia Bousquet',
+    role: 'Licenciada en psicología',
+    description: [
+      'Terapia Cognitivo Conductual para Trastornos de Ansiedad y Depresión',
+      'Discapacidad y Salud Mental'
+    ],
+    image: '/images/Staff14.jpg'
+  }, {
+    name: 'Walter Lagos',
+    role: 'Licenciado en psicología',
+    description: [
+      'Coordinador de grupos terapéuticos de pacientes internados. ',
+      'Coordinador de grupo de pacientes externados',
+      'Coordinador de grupo de pacientes externados',
+      'Psicoterapeuta de terapias vinculares',
+      'Psicólogo de guardia diurna y nocturna.',
+      'Entrevista de admisiones.',
+    ],
+    image: '/images/Staff15.jpeg'
+  },
+  {
+    name: 'Agustina Garcia Lopez Boero',
+    role: 'Licenciada en psicología',
+    description: '',
+    image: '/images/Staff16.jpeg'
+  }, {
+    name: 'Daniel Montoya',
+    role: 'Licenciado en psicología',
+    description: '',
+    image: '/images/Staff17.jpeg'
+  },
+   {
+    name: 'Ludmila Rueda',
+    role: 'Licenciada en psicología',
+    description: '',
+    image: '/images/Staff18.jpeg'
+  },
+   {
+    name: 'Paula Santini',
+    role: 'Licenciada en psicología',
+    description: '',
+    image: '/images/Staff19.jpg'
+  },
+   {
+    name: 'Adrian Grande Tylor',
+    role: 'Licenciado en psicología',
+    description: '',
+    image: '/images/Staff20.jpg'
   }
 ]
 
@@ -133,8 +193,8 @@ export default function Equipo() {
               <div className={styles.headerContent}>
                 <h2>Equipo profesional multidisciplinarios</h2>
                 <p className={styles.intro}>
-                  Contamos con un equipo de profesionales altamente capacitados y especializados 
-                  en el tratamiento integral de adicciones, comprometidos con la recuperación 
+                  Contamos con un equipo de profesionales altamente capacitados y especializados
+                  en el tratamiento integral de adicciones, comprometidos con la recuperación
                   y el bienestar de nuestros pacientes.
                 </p>
               </div>
@@ -144,8 +204,8 @@ export default function Equipo() {
               {teamMembers.map((member, index) => (
                 <div key={index} className={styles.teamMember}>
                   <div className={styles.imageContainer}>
-                    <img 
-                      src={member.image} 
+                    <img
+                      src={member.image}
                       alt={member.name}
                       className={styles.memberImage}
                     />
@@ -153,7 +213,7 @@ export default function Equipo() {
                   <div className={styles.memberInfo}>
                     <h3 className={styles.memberName}>{member.name}</h3>
                     <p className={styles.memberRole}>{member.role}</p>
-                    
+
                     <div className={styles.memberDescription}>
                       {Array.isArray(member.description) ? (
                         <ul>
