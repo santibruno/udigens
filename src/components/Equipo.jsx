@@ -135,7 +135,7 @@ const teamMembers = [
     role: 'Licenciada en psicología',
     description: [
       'Terapia Cognitivo Conductual para Trastornos de Ansiedad y Depresión',
-      'Discapacidad y Salud Mental'
+      'Trastorno por Estrés Postraumático', 'Acompañar las discapacidades', 'Nuevas amenazas para los jóvenes” Comisión organizadora.', 'Adicciones', 'Autismo y TDAH.'
     ],
     image: '/images/Staff14.jpg'
   }, {
@@ -154,30 +154,31 @@ const teamMembers = [
   {
     name: 'Agustina Garcia Lopez Boero',
     role: 'Licenciada en psicología',
-    description: '',
+    description: ['Acompañante terapeutica en Desir Salud', 'Coordinadora de espacios grupales y talleres'],
     image: '/images/Staff16.jpeg'
   }, {
     name: 'Daniel Montoya',
     role: 'Licenciado en psicología',
-    description: '',
+    description: ['Formacion en neurociencias', 'Psicoterapia individual'],
     image: '/images/Staff17.jpeg'
   },
-   {
+  {
     name: 'Ludmila Rueda',
     role: 'Licenciada en psicología',
-    description: '',
+    description: ['Técnicas Psicométricas y Proyectivas', 'Autismo', 'Terapia Cognitivo Conductual', 'Selección de personal y Psicotécnicos'],
     image: '/images/Staff18.jpeg'
   },
-   {
+  {
     name: 'Paula Santini',
     role: 'Licenciada en psicología',
-    description: '',
+    description: ['Coordinación de grupos de pacientes', 'Coordinación de grupos de familias', 'Terapia individual'],
     image: '/images/Staff19.jpg'
   },
-   {
+  {
     name: 'Adrian Grande Tylor',
-    role: 'Licenciado en psicología',
-    description: '',
+    role: 'Licenciado en psicología por la UNT',
+    description:
+      ['Psicoterapia individual', 'Terapias vinculares', 'Coordinador de grupos', 'Co-coordinador de grupo de externados.'],
     image: '/images/Staff20.jpg'
   }
 ]
